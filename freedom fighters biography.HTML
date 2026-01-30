@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Freedom Fighters of India</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #ff9933;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.fighters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h2 {
+    color: #138808;
+}
+
+.details {
+    display: none;
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #000080;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0000cc;
+}
+
+footer {
+    background-color: #138808;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Freedom Fighters of India</h1>
+    <p>Remembering the heroes who sacrificed their lives for our freedom 🇮🇳</p>
+</header>
+
+<section class="fighters">
+
+    <!-- Mahatma Gandhi -->
+    <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.jsOEzeCqeuO0jMPtOcxSSgHaJa?pid=Api&P=0&h=180">
+        <h2>Mahatma Gandhi</h2>
+        <p>Father of the Nation</p>
+
+        <div class="details">
+            <p>
+                Mahatma Gandhi (1869–1948) was the leader of India's freedom movement
+                against British rule. He followed the path of non-violence (Ahimsa)
+                and truth (Satya). His major movements include the Non-Cooperation
+                Movement, Dandi March, and Quit India Movement.
+            </p>
+        </div>
+
+        <button onclick="toggleDetails(this)">Read More</button>
+    </div>
+
+    <!-- Bhagat Singh -->
+    <div class="card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.e0ccVTOuYzmeL3l9qsXSBQHaLG?pid=Api&P=0&h=180">
+        <h2>Bhagat Singh</h2>
+        <p>Revolutionary Hero</p>
+
+        <div class="details">
+            <p>
+                Bhagat Singh (1907–1931) was a fearless revolutionary who fought
+                against British oppression. He participated in the Central
+                Legislative Assembly bombing and was executed at the age of 23.
+                His bravery inspired millions of Indians.
+            </p>
+        </div>
+
+        <button onclick="toggleDetails(this)">Read More</button>
+    </div>
+
+    <!-- Subhas Chandra Bose -->
+    <div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.gIli7_Eb6f-c1x3ppmReCwHaKk?pid=Api&P=0&h=180">
+        <h2>Subhas Chandra Bose</h2>
+        <p>Netaji</p>
+
+        <div class="details">
+            <p>
+                Subhas Chandra Bose (1897–1945) was a nationalist leader who formed
+                the Indian National Army (INA). His famous slogan was
+                “Give me blood, and I will give you freedom.” He believed in
+                armed struggle to free India.
+            </p>
+        </div>
+
+        <button onclick="toggleDetails(this)">Read More</button>
+    </div>
+
+    <!-- Rani Lakshmibai -->
+    <div class="card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.BHIJdQnDNE4gQVkeBOEApwHaK1?pid=Api&P=0&h=180">
+        <h2>Rani Lakshmibai</h2>
+        <p>Queen of Jhansi</p>
+
+        <div class="details">
+            <p>
+                Rani Lakshmibai (1828–1858) was one of the leading figures of the
+                Indian Rebellion of 1857. She fought bravely against the British
+                to protect her kingdom and became a symbol of courage and patriotism.
+            </p>
+        </div>
+
+        <button onclick="toggleDetails(this)">Read More</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Freedom Fighters of India | Educational Project</p>
+</footer>
+
+<script>
+function toggleDetails(button) {
+    const details = button.previousElementSibling;
+    if (details.style.display === "block") {
+        details.style.display = "none";
+        button.innerText = "Read More";
+    } else {
+        details.style.display = "block";
+        button.innerText = "Read Less";
+    }
+}
+</script>
+
+</body>
+</html>
